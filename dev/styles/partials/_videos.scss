@@ -1,0 +1,101 @@
+.videos {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	text-align: center;
+	background: $white;
+	
+	
+	p {
+		font-size: 1.8rem;
+		line-height: 20px;
+		letter-spacing: 1px;
+		position: relative;
+		z-index: 20;
+	}
+	
+}
+
+.video-links {
+		// padding: 0 20% 20px 20%;
+		text-align: center;
+		
+	}
+
+.video {
+		margin-top: 40px;
+		position: relative;
+	}
+// text section
+
+.video h3 {
+	font-family: $basefont;
+	font-size: 2rem;
+	margin: 0;
+	line-height: 40px;
+	font-weight: 400;
+	position: relative;
+	z-index: 20;
+	a {
+		color: $black;
+		text-decoration: none;
+		line-height: 20px;
+		letter-spacing: 1px;
+		position: relative;
+		z-index: 20;
+		&:hover {
+			font-weight: 700;
+		}
+	}
+}
+
+.videoLine {
+	height:30px;
+	width: 70%;
+	background-color: $lightaqua;
+	position: absolute;
+	right: 16%;
+	z-index: 0;
+	top: 8%;
+}
+
+.videoLine1, 
+.videoLine3 {
+	right: 5%;
+}
+
+.videoLine2 {
+	left: 5%;
+}
+
+
+// MEDIA QUERIES
+
+// large portrait tablet, small landscape tablet
+
+// @media (max-width: 940px) {
+	
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

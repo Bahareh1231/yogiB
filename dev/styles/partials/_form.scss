@@ -1,0 +1,150 @@
+.bottomForm {
+	 background-image: url('../../assets/chat.jpg');
+	 background-size: cover;
+	 background-attachment: fixed;
+	 background-position: 50%;
+	 padding-bottom: 40px;
+	 .background-overlay {
+		background-color: rgba(0,0,0,0.2);
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	 }
+	 h2 {
+	 	margin: 0;
+	 }
+	 .wrapper {
+		 background: rgba(239, 239, 239,0.9);
+		 display: flex;
+	 }
+}
+
+// contact portion
+
+.contactInfo {
+	width: 50%;
+	padding: 20px;
+	font-size: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	.box {
+		display: flex;
+		// margin-top: 30px;
+		justify-content: flex-end;
+		p {
+			margin: 0 10px;
+		}
+	}
+}
+
+.socialMediaIcons {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	font-size: 2.7rem;
+	a {
+		color: $black;
+		i {
+			transition: all 0.3s;
+		}
+		&:hover i {
+			transform: scale(1.2);
+		}
+	}
+}
+
+// form portion
+
+
+.bottomForm form {
+	width: 50%;
+	font-size: 2rem;
+	font-family: $basefont;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	&:focus-within input {
+		background-color: $white;
+		border: none;
+	}
+	&:focus-within .message {
+		background-color: $white;
+		border: none;
+	}
+}
+
+.name-email {
+	margin-bottom: 10px;
+	width: 100%;
+	.user-name, .user-email {
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 10px;
+	}
+	input {
+		border: none;
+		background: none;
+		border-bottom: 1px solid grey;
+		margin: 0;
+	}
+}
+
+
+// textbox and button
+
+.message {
+	width: 100%;
+	border: none;
+	padding: 10px;
+	margin: 0;
+	background: none;
+	resize: none;
+	border-bottom: 1px solid grey;
+}
+.mainFormButton {
+	padding: 10px;
+	margin: 10px 0;
+	width: 50%;
+	background: white;
+	border: 2px solid black;
+	&:hover {
+		letter-spacing: 1px;
+		transition: all 1s;
+	}
+	&:active {
+		background: $black;
+		color: $white;
+	}
+
+}
+
+
+// MEDIA QUERIES
+
+// large portrait tablet, small landscape tablet
+
+@media (max-width: 940px) {
+	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

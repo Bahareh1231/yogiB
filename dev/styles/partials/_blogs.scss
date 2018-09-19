@@ -1,0 +1,209 @@
+.blog {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background-color: #EFEFEF;
+	padding-bottom: 40px;
+	
+}
+
+.blog-section {
+		display: flex;
+		flex-direction: column;
+	}
+
+// blog pictures
+
+.blog-sidebar {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 30px;
+}
+
+
+
+.blogpic {
+	margin-bottom: 5px;
+	position: relative;
+	display: block;
+	height: 200px;
+	width: 200px;
+	img {
+		border-radius: 50%;
+		border: 1px solid black;
+
+	}
+}
+
+
+// keeping the first image without an overlay by default
+
+
+.no-over {
+	opacity: 0;
+}
+
+// overlay
+
+.blog-overlay {
+	@include position(absolute, 0,0,0,0);
+	background-color: rgba(0,0,0,0.4);
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	border: solid black 2px;
+	&:hover {
+	border: solid black 5px;
+	}
+	&:active {
+	border: solid $aqua 5px;
+	}
+	p {
+		color: white;
+		font-size: 2rem;
+		letter-spacing: 2px;
+		font-weight: bold;
+	}
+}
+
+// text section
+
+.blog-text {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	.blog1 {
+		display: block;
+		}
+	.blog2 {
+		display: none;
+		}
+	.blog3 {
+		display: none;
+		}
+}
+
+.blog-content {
+		p {
+			line-height: 30px;
+			letter-spacing: 2px;
+			font-size: 1.5rem;
+			text-align: justify;
+			width: 100%;
+		}
+		h3 {
+			color: $aqua;
+			font-size: 4rem;
+			margin-bottom: 0;
+			text-align: center;
+		}	
+		a {
+			color: black;
+			font-weight: bold;
+
+		}
+	}
+
+// MEDIA QUERIES
+
+
+// large portrait tablet, small landscape tablet
+
+@media (max-width: 940px) {
+	
+	.blog-wrapper{
+		padding: 30px 0;
+	}
+
+	.blog-wrapper .blog-section {
+		flex-direction: column;
+	}
+
+	.blog-sidebar {
+		flex-direction: row;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.blogpic {
+		margin: 1%;
+	}
+
+	.blog-text {
+		width: 90%;
+		
+	}
+
+}
+
+// put pictures into columns
+
+
+@media (max-width: 700px) {
+	.blog-wrapper .blog-section {
+		flex-direction: row;
+	}
+
+	.blog-sidebar {
+		flex-direction: column;
+		align-items: center;
+		padding-right: 0;
+	}
+
+	.blogpic {
+		height: 200px;
+		width: 200px;
+	}
+	.blog-text {
+		padding: 0 15px 0 0;
+
+	}
+
+}
+
+// mobile 
+ 
+@media (max-width: 480px) {
+	.blogpic {
+		height: 150px;
+		width: 150px;
+	}
+	.blog-text {
+		p {
+		line-height: 20px;
+		}
+	}
+	nav {
+		justify-content: center;
+		.logo {
+			margin: 10px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

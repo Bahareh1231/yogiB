@@ -1,0 +1,24 @@
+// colour variables
+
+	$aqua: rgb(116, 221, 217);
+	$lightaqua: rgb(202, 245, 239);
+	$peach: rgb(255, 196, 172);
+	$white: rgb(249, 249, 249);
+	$black: rgb(50, 50, 50);
+
+	// font variables
+
+	$logofont: "Pacifico";
+	$headerfont: "Open Sans Condensed";
+	$basefont: "Montserrat";
+
+	// mixins
+
+	@mixin position($type, $top, $right, $bottom, $left) { 
+    position: $type; 
+    top: $top; 
+    right: $right; 
+    bottom: $bottom; 
+    left: $left; 
+
+	}

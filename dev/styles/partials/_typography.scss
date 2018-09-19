@@ -1,0 +1,94 @@
+	html {
+		font-size: 62.5%;
+		scroll-behavior: smooth;
+		position: relative;
+
+	}
+
+	.wrapper {
+		max-width: 1500px;
+		width: 65%;
+		margin: 0 auto;
+
+	}
+
+	.opacityVisible {
+		opacity: 1;
+		// transform: 
+		transition: all 0.5s;
+	}
+
+	.opacityInvisible {
+		opacity: 0;
+	}
+
+	.logo {
+	font-family: $logofont;
+	font-size: 3rem;
+	margin: 15px 15px 20px 15px;
+	color: $aqua;
+	}
+
+	figure {
+		overflow: hidden;
+	}
+
+	img {
+		max-width: 100%;
+	
+	}
+
+	h1,
+	h2 {
+		font-family: $headerfont;
+	}
+
+	p,
+	h3 {
+		font-family: $basefont;
+	}
+
+	.subhead {
+		color: $peach;
+		font-size: 5rem;
+		text-transform: lowercase;
+		padding: 20px;
+		margin: 10px;
+
+	}
+
+	// logo and social media
+
+
+	.icons a {
+		text-decoration: none;
+		color: $peach;
+		font-size: 4rem;
+		padding: 10px;
+		&:hover {
+			
+		}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
